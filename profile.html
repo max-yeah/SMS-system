@@ -116,7 +116,7 @@
       <div class="mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-4-phone">
         <div class="crypto-widget">
           <h2 class="crypto-widget__heading mdc-typography--overline mdc-theme--primary">
-            <span class="crypto-widget__heading-text">John's Profile</span>
+            <span class="crypto-widget__heading-text">Group Information</span>
             <span class="crypto-widget__heading-border"></span>
           </h2>
           <div class="crypto-widget__content">
@@ -124,10 +124,10 @@
               <span class="crypto-profile__image mdc-elevation--z16">
                 <img  src="http://i.pravatar.cc/150?img=12" width=80 alt="Crypto">
               </span>
-              <span class="crypto-price-list__coin-name mdc-typography--overline">Name</span>
-              <span class="mdc-typography--overline">John M Langan</span>
+              <span class="crypto-price-list__coin-name mdc-typography--overline">Group</span>
+              <span class="mdc-typography--overline">Group7</span>
               <span class="crypto-price-list__coin-name mdc-typography--overline">Email</span>
-              <span class="mdc-typography--overline">john@oxygenna.com</span>
+              <span class="mdc-typography--overline">cuhkszgroup1@sms.edu.cn</span>
             </div>
           </div>
         </div>
@@ -184,21 +184,29 @@
                   <div class="mdc-layout-grid__inner">
                     <div class="mdc-layout-grid__cell--span-6">
                       <div class="mdc-text-field mdc-text-field--transparent crypto-margin-bottom-big crypto-w-100">
-                        <input type="text" id="first-name-text-field" class="mdc-text-field__input" value="John">
-                        <label for="first-name-text-field" class="mdc-floating-label">First Name</label>
+                        <input disabled type="text" id="first-name-text-field" class="mdc-text-field__input" value="John">
+                        <label for="first-name-text-field" class="mdc-floating-label">Group Leader</label>
                         <div class="mdc-line-ripple"></div>
                       </div>
                     </div>
 
                     <div class="mdc-layout-grid__cell--span-6">
                       <div class="mdc-text-field mdc-text-field--transparent crypto-margin-bottom-big crypto-w-100">
-                        <input type="text" id="last-name-text-field" class="mdc-text-field__input" value="Langan">
-                        <label for="last-name-text-field" class="mdc-floating-label">Last Name</label>
+                        <input disabled type="text" id="last-name-text-field" class="mdc-text-field__input" value="Ding Yi">
+                        <label for="last-name-text-field" class="mdc-floating-label">Instructor</label>
                         <div class="mdc-line-ripple"></div>
                       </div>
                     </div>
 
                     <div class="mdc-layout-grid__cell--span-6">
+                      <div class="mdc-text-field mdc-text-field--transparent crypto-margin-bottom-big crypto-w-100">
+                        <input disabled type="text" id="last-name-text-field" class="mdc-text-field__input" value="Group 7">
+                        <label for="last-name-text-field" class="mdc-floating-label">Group ID</label>
+                        <div class="mdc-line-ripple"></div>
+                      </div>
+                    </div>
+
+                    <!-- <div class="mdc-layout-grid__cell--span-6">
                       <div class="mdc-select mdc-select-box crypto-gender-select crypto-margin-bottom-big crypto-w-100" id="gender-select">
                         <select class="mdc-select__native-control">
                           <option value="male" selected>Male</option>
@@ -206,31 +214,31 @@
                         </select>
                         <div class="mdc-line-ripple"></div>
                       </div>
-                    </div>
+                    </div> -->
                     <div class="mdc-layout-grid__cell--span-6">
                       <div class="mdc-text-field mdc-text-field--transparent crypto-margin-bottom-big crypto-w-100">
-                        <input type="number" id="age-text-field" class="mdc-text-field__input" value="39">
-                        <label for="age-text-field" class="mdc-floating-label">Age</label>
+                        <input disabled type="text" id="last-name-text-field" class="mdc-text-field__input" value="L1">
+                        <label for="last-name-text-field" class="mdc-floating-label">Lecture ID</label>
                         <div class="mdc-line-ripple"></div>
                       </div>
                     </div>
                     <div class="mdc-layout-grid__cell--span-6">
                       <div class="mdc-text-field mdc-text-field--transparent crypto-margin-bottom-big crypto-w-100">
-                        <input type="email" id="email-text-field" class="mdc-text-field__input" value="john.langan@oxygenna.com">
+                        <input disabled type="email" id="email-text-field" class="mdc-text-field__input" value="cuhkszgroup1@sms.edu.cn">
                         <label for="email-text-field" class="mdc-floating-label">Email</label>
                         <div class="mdc-line-ripple"></div>
                       </div>
                     </div>
                     <div class="mdc-layout-grid__cell--span-6">
                       <div class="mdc-text-field mdc-text-field--transparent crypto-margin-bottom-big crypto-w-100">
-                        <input type="text" id="occupation-text-field" class="mdc-text-field__input" value="Doctor">
-                        <label for="occupation-text-field" class="mdc-floating-label">Occupation</label>
+                        <input disabled type="text" id="occupation-text-field" class="mdc-text-field__input" value="Fin3080">
+                        <label for="occupation-text-field" class="mdc-floating-label">Course ID</label>
                         <div class="mdc-line-ripple"></div>
                       </div>
                     </div>
-                    <div class="mdc-layout-grid__cell--span-6">
+                    <!-- <div class="mdc-layout-grid__cell--span-6">
                       <a href="profile.html" class="mdc-button mdc-button--unelevated big-round-corner-button">Submit</a>
-                    </div>
+                    </div> -->
                   </div>
                 </form>
               </div>
@@ -282,7 +290,167 @@
 
               <!-- ************ Ranking performance ************** -->
               <div class="crypto-settings-form-panel">
-                <form class="crypto-general-form">
+                  <div class="crypto-widget__content crypto-overflow-x-auto">
+                      <table class="mdl-data-table mdc-typography--overline">
+                        <thead class="crypto-transactions-list__labels">
+                          <tr>
+                            <th></th>
+                            <th class="mdl-data-table__cell--non-numeric">
+                              Group ID
+                            </th>
+                            <th class="mdl-data-table__cell--non-numeric">
+                              Group Balance
+                            </th>
+                            <th class="mdl-data-table__cell--non-numeric">
+                              Performance
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="crypto-transactions-list__item">
+                            <td class="mdl-data-table__cell--icon" style="color:gold;">
+                              1
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric">
+                              Group 7
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric">
+                              1,058,030
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric crypto-price-list__coin-performance--up">
+                              +5.8%
+                            </td>
+                          </tr>
+                          <tr class="crypto-transactions-list__item">
+                            <td class="mdl-data-table__cell--icon">
+                              2
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric">
+                              Group 4
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric">
+                              1,042,030
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric crypto-price-list__coin-performance--up">
+                              +4.2%
+                            </td>
+                          </tr>
+                          <tr class="crypto-transactions-list__item">
+                            <td class="mdl-data-table__cell--icon">
+                              3
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric">
+                              Group 5
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric">
+                              1,038,030
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric crypto-price-list__coin-performance--up">
+                              +3.8%
+                            </td>
+                          </tr>
+                          <tr class="crypto-transactions-list__item">
+                            <td class="mdl-data-table__cell--icon">
+                              4
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric">
+                              Group 1
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric">
+                              1,023,030
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric crypto-price-list__coin-performance--up">
+                              +2.3%
+                            </td>
+                          </tr>
+                          <tr class="crypto-transactions-list__item">
+                            <td class="mdl-data-table__cell--icon">
+                              5
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric">
+                              Group 10
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric">
+                              1,00,9030
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric crypto-price-list__coin-performance--up">
+                              +0.9%
+                            </td>
+                          </tr>  
+                          <tr class="crypto-transactions-list__item">
+                            <td class="mdl-data-table__cell--icon">
+                              6
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric">
+                              Group 3
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric">
+                              978,030
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric crypto-price-list__coin-performance--down">
+                              -2.1%
+                            </td>
+                          </tr> 
+                          <tr class="crypto-transactions-list__item">
+                            <td class="mdl-data-table__cell--icon">
+                              7
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric">
+                              Group 8
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric">
+                              943,050
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric crypto-price-list__coin-performance--down">
+                              -5.7%
+                            </td>
+                          </tr>  
+                          <tr class="crypto-transactions-list__item">
+                            <td class="mdl-data-table__cell--icon">
+                              8
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric">
+                              Group 2
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric">
+                              935,030
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric crypto-price-list__coin-performance--down">
+                              -6.5%
+                            </td>
+                          </tr>  
+                          <tr class="crypto-transactions-list__item">
+                            <td class="mdl-data-table__cell--icon">
+                              9
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric">
+                              Group 6
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric">
+                              912,231
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric crypto-price-list__coin-performance--down">
+                              -8.6%
+                            </td>
+                          </tr>
+                          <tr class="crypto-transactions-list__item">
+                            <td class="mdl-data-table__cell--icon">
+                              10
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric">
+                              Group 9
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric">
+                              871,864
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric crypto-price-list__coin-performance--down">
+                              -12.3%
+                            </td>
+                          </tr>                           
+                        </tbody>
+                      </table>
+                    </div>
+                <!-- <form class="crypto-general-form">
                   <div class="mdc-layout-grid__inner crypto-margin-bottom-big">
                     <div class="mdc-layout-grid__cell--span-6">
                       <div class="mdc-form-field">
@@ -369,7 +537,7 @@
                       <a href="profile.html" class="mdc-button mdc-button--unelevated big-round-corner-button">Save</a>
                     </div>
                   </div>
-                </form>
+                </form> -->
               </div>
 
               <!-- *********************** -->

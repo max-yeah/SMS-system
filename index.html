@@ -199,126 +199,138 @@
 
                 <!-- widget 2 -->
                 <div class="crypto-widget">
-                  <h2
-                    class="crypto-widget__heading mdc-typography--overline mdc-theme--primary"
-                  >
-                    <span class="crypto-widget__heading-text"
-                      >Wallets Overview</span
+                  <nav id="crypto-wallet-transaction" class="mdc-tab-bar">
+                    <div class="mdc-tab-scroller">
+                      <div class="mdc-tab-scroller__scroll-area">
+                        <div class="mdc-tab-scroller__scroll-content">
+                          <a
+                            class="mdc-tab mdc-tab--active"
+                            role="tab"
+                            aria-selected="true"
+                            tabindex="0"
+                          >
+                            <span class="mdc-tab__content">
+                              <span class="mdc-tab__text-label">Sell</span>
+                            </span>
+                            <span
+                              class="mdc-tab-indicator mdc-tab-indicator--active"
+                            >
+                              <span
+                                class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"
+                              ></span>
+                            </span>
+                            <span class="mdc-tab__ripple"></span>
+                          </a>
+                          <a
+                            class="mdc-tab"
+                            role="tab"
+                            aria-selected="true"
+                            tabindex="0"
+                          >
+                            <span class="mdc-tab__content">
+                              <span class="mdc-tab__text-label">Buy</span>
+                            </span>
+                            <span class="mdc-tab-indicator">
+                              <span
+                                class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"
+                              ></span>
+                            </span>
+                            <span class="mdc-tab__ripple"></span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+                  <div id="wallet-form-tabs">
+                    <div
+                      class="crypto-wallet-form-panel crypto-wallet-form-panel--active"
                     >
-                    <span class="crypto-widget__heading-border"></span>
-                  </h2>
-                  <div class="crypto-widget__content">
-                    <ul class="crypto-border-list">
-                      <li
-                        class="crypto-border-list__item crypto-border-list__item--large crypto-wallet "
-                      >
-                        <!-- BTC WALLET -->
-                        <a href="wallet.html" class="mdc-theme--on-surface">
-                          <h4
-                            class="crypto-wallet__name mdc-typography--overline"
-                          >
-                            BTC WALLET
-                          </h4>
-                          <h2
-                            class="crypto-wallet__value mdc-typography--headline3"
-                          >
-                            0.81215
-                          </h2>
-                          <span
-                            class="crypto-wallet__stats crypto-wallet__stats--up mdc-typography--caption"
-                            >0.00%</span
-                          >
-                          <span
-                            class="crypto-wallet__market crypto-wallet__market--bitcoin mdc-typography--caption"
-                          ></span>
-                          <span
-                            class="crypto-coin__border mdc-theme--primary-bg"
-                          ></span>
-                          <span
-                            class="crypto-border-list__border-hover mdc-theme--secondary-bg"
-                          ></span>
-                        </a>
-                      </li>
-                      <li
-                        class="crypto-border-list__item crypto-border-list__item--large crypto-wallet "
-                      >
-                        <!-- BTC WALLET -->
-                        <a href="wallet.html" class="mdc-theme--on-surface">
-                          <h4
-                            class="crypto-wallet__name mdc-typography--overline"
-                          >
-                            ETHER WALLET
-                          </h4>
-                          <h2
-                            class="crypto-wallet__value mdc-typography--headline3"
-                          >
-                            7.190
-                          </h2>
-                          <span
-                            class="crypto-wallet__stats crypto-wallet__stats--up mdc-typography--caption"
-                            >0.00%</span
-                          >
-                          <span
-                            class="crypto-wallet__market crypto-wallet__market--ethereum mdc-typography--caption"
-                          ></span>
-                          <span
-                            class="crypto-coin__border mdc-theme--primary-600-bg"
-                          ></span>
-                          <span
-                            class="crypto-border-list__border-hover mdc-theme--secondary-bg"
-                          ></span>
-                        </a>
-                      </li>
-                      <li
-                        class="crypto-border-list__item crypto-border-list__item--large crypto-wallet "
-                      >
-                        <!-- BTC WALLET -->
-                        <a href="wallet.html" class="mdc-theme--on-surface">
-                          <h4
-                            class="crypto-wallet__name mdc-typography--overline"
-                          >
-                            Tesla WALLET
-                          </h4>
-                          <h2
-                            class="crypto-wallet__value mdc-typography--headline3"
-                          >
-                            32.730
-                          </h2>
-                          <span
-                            class="crypto-wallet__stats crypto-wallet__stats--up  mdc-typography--caption"
-                            >0.00%</span
-                          >
-                          <span
-                            class="crypto-wallet__market crypto-wallet__market--litecoin mdc-typography--caption"
-                          ></span>
-                          <span
-                            class="crypto-coin__border mdc-theme--primary-800-bg"
-                          ></span>
-                          <span
-                            class="crypto-border-list__border-hover mdc-theme--secondary-bg"
-                          ></span>
-                        </a>
-                      </li>
-                      <li class="crypto-wallet crypto-wallet--new">
-                        <a
-                          href="#"
-                          class="crypto-wallet crypto-wallet--new mdc-theme--on-surface"
+                      <form>
+                        <div
+                          class="mdc-text-field mdc-text-field--fullwidth crypto-text-field--fullwidth mdc-text-field--dense mdc-text-field--with-trailing-icon crypto-margin-bottom-big"
                         >
-                          <h4
-                            class="crypto-wallet__name mdc-typography--overline"
+                          <label for="send-to" class="mdc-floating-label"
+                            >Company</label
                           >
-                            + ADD NEW
-                          </h4>
-                        </a>
-                      </li>
-                    </ul>
+                          <i
+                          class="material-icons mdc-text-field__icon"
+                          tabindex="0"
+                          role="button"
+                          >person_outline</i>
+                          <select class="mdc-text-field__input" style="padding-top: 10%; padding-left: 5%;">
+                            <option value="male" selected>Apple</option>
+                            <option value="Amazon">Amazon</option>
+                            <option value="Tesla">Tesla</option>
+                          </select>
+
+                          <div class="mdc-line-ripple"></div>
+                        </div>
+                        <div
+                          class="mdc-text-field mdc-text-field--fullwidth crypto-text-field--fullwidth mdc-text-field--dense crypto-margin-bottom-big"
+                        >
+                          <input
+                            type="text"
+                            id="send-amount"
+                            class="mdc-text-field__input"
+                            style="padding-top: 10%; padding-left: 5%;"
+                          />
+                          <label for="send-amount" class="mdc-floating-label"
+                            >Amount</label
+                          >
+                          <div class="mdc-line-ripple"></div>
+                        </div>
+                      </form>
+                      <div class="crypto-wallet-form-panel--actions">
+                        <a href="index.html" class="mdc-button">Comfirm</a>
+                      </div>
+                    </div>
+                    <div class="crypto-wallet-form-panel">
+                        <form>
+                          <div
+                            class="mdc-text-field mdc-text-field--fullwidth crypto-text-field--fullwidth mdc-text-field--dense mdc-text-field--with-trailing-icon crypto-margin-bottom-big"
+                          >
+                            <label for="send-to" class="mdc-floating-label"
+                              >Company</label
+                            >
+                            <i
+                            class="material-icons mdc-text-field__icon"
+                            tabindex="0"
+                            role="button"
+                            >person_outline</i>
+                            <select class="mdc-text-field__input" style="padding-top: 10%; padding-left: 5%;">
+                              <option value="male" selected>Apple</option>
+                              <option value="Amazon">Amazon</option>
+                              <option value="Tesla">Tesla</option>
+                            </select>
+  
+                            <div class="mdc-line-ripple"></div>
+                          </div>
+                          <div
+                            class="mdc-text-field mdc-text-field--fullwidth crypto-text-field--fullwidth mdc-text-field--dense crypto-margin-bottom-big"
+                          >
+                            <input
+                              type="text"
+                              id="send-amount"
+                              class="mdc-text-field__input"
+                              style="padding-top: 10%; padding-left: 5%;"
+                            />
+                            <label for="send-amount" class="mdc-floating-label"
+                              >Amount</label
+                            >
+                            <div class="mdc-line-ripple"></div>
+                          </div>
+                        </form>
+                      <div class="crypto-wallet-form-panel--actions">
+                        <a href="index.html" class="mdc-button">Comfirm</a>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <!-- end widget 2 -->
 
 
                 <!-- widget 3 -->
-                <div class="crypto-widget">
+                <!-- <div class="crypto-widget">
                   <h2
                     class="crypto-widget__heading mdc-typography--overline mdc-theme--primary"
                   >
@@ -343,7 +355,7 @@
                     </div>
                     <div id="chart-most-invested"></div>
                   </div>
-                </div>
+                </div> -->
                 <!-- end widget 3 -->
 
               </div>
@@ -372,6 +384,7 @@
                       >
                       <a href="#" class="mdc-button">Amazon</a>
                       <a href="#" class="mdc-button">Tesla</a>
+                      <a href="#" class="mdc-button">Search</a>
                     </div>
                   </div>
                   <div class="crypto-widget__content">
@@ -382,7 +395,7 @@
 
 
                 <!-- widget 5 -->
-                <div class="crypto-widget">
+                <div style="display: none;">
                   <div class="mdc-layout-grid__inner">
                     <div
                       class="mdc-layout-grid__cell--span-6-desktop mdc-layout-grid__cell--span-6-tablet mdc-layout-grid__cell--span-3-phone"
@@ -1274,5 +1287,6 @@
     <!-- page specific JS -->
 
     <script src="assets/js/pages/index.js"></script>
+    <script src="assets/js/pages/wallet.js"></script>
   </body>
 </html>

@@ -280,7 +280,7 @@
       for (let i = 0; i < 14; i++) {
         randoms.push(Math.floor(Math.random() * 4) + (price - 2));
       }
-
+      console.log("KKKKKK", randoms.length);
       chart.appendData([
         {
           data: randoms
